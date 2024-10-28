@@ -10,11 +10,11 @@
 // - L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 
-// Posta la domanda quanti km e l'età 
+// Posta la domanda quanti km e l'età
 const input = prompt("Inserisci il numero di km che vuoi effettuare e la tua età, separati da una virgola (es: 100, 30):");
 console.log(input);
 
-// Convertito le stringhe in numeri 
+// Convertito le stringhe in numeri
 const [km, eta] = input.split(",").map(Number);
 
 // Visualizza i km e l'età con descrizioni
@@ -31,7 +31,7 @@ let prezzoFinale = prezzoBase;
 if (eta < 19) {
     let sconto = prezzoBase * 0.20; // Calcola il 20% del prezzo base
     prezzoFinale = prezzoBase - sconto; // Sottrai lo sconto dal prezzo base
-} 
+}
 else if (eta > 64) {
     let sconto = prezzoBase * 0.40; // Calcola il 40% del prezzo base
     prezzoFinale = prezzoBase - sconto; // Sottrai lo sconto dal prezzo base
