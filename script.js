@@ -38,6 +38,5 @@ else if (eta > 64) {
 }
 
 // Prezzo finale con massimo due decimali
-console.log(`Il prezzo finale del viaggio è: € ${prezzoFinale.toFixed(2)}`);
-
+console.log(`Il prezzo finale del viaggio è: ${prezzoFinale.toFixed(2)} €`);
 
