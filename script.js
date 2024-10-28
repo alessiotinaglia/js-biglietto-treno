@@ -10,3 +10,20 @@
 // - L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 
+// Posta la domanda quanti km e l'età 
+
+
+// Convertito le stringhe in numeri 
+
+
+// Prezzo al chilometro
+
+
+// Calcolo prezzo totale e il prezzo finale con i vari sconti del 20% e del 40%
+
+
+// Applicazione sconti 
+
+
+// Prezzo finale con massimo due decimali
+
