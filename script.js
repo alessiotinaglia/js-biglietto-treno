@@ -11,10 +11,14 @@
 
 
 // Posta la domanda quanti km e l'età 
-
+const input = prompt("Inserisci il numero di km che vuoi effettuare e la tua età, separati da una virgola (es: 100, 30):");
+console.log(input);
 
 // Convertito le stringhe in numeri 
+const [km, eta] = input.split(",").map(Number);
 
+// Visualizza i km e l'età con descrizioni
+console.log(`Km che vuoi percorrere: (${km}) e anni di età (${eta}).`);
 
 // Prezzo al chilometro
 
