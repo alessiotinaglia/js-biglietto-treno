@@ -21,13 +21,23 @@ const [km, eta] = input.split(",").map(Number);
 console.log(`Km che vuoi percorrere: (${km}) e anni di età (${eta}).`);
 
 // Prezzo al chilometro
-
+const totkm = 0.21;
 
 // Calcolo prezzo totale e il prezzo finale con i vari sconti del 20% e del 40%
-
+let prezzoBase = km * totkm;
+let prezzoFinale = prezzoBase;
 
 // Applicazione sconti 
-
+if (eta < 19) {
+    let sconto = prezzoBase * 0.20; // Calcola il 20% del prezzo base
+    prezzoFinale = prezzoBase - sconto; // Sottrai lo sconto dal prezzo base
+} 
+else if (eta > 64) {
+    let sconto = prezzoBase * 0.40; // Calcola il 40% del prezzo base
+    prezzoFinale = prezzoBase - sconto; // Sottrai lo sconto dal prezzo base
+}
 
 // Prezzo finale con massimo due decimali
+console.log(`Il prezzo finale del viaggio è: € ${prezzoFinale.toFixed(2)}`);
+
 
